@@ -3,11 +3,11 @@ The below will be my notes on each of the sections in Refactoring Improving the 
 
  - **Composing Methods**
 	 - [Extract Method](#extract-method)
-	 - [Inline Method](##inline-method)
-	 - [Inline Temp](##inline-temp)
-	 - [Replace Temp with Query](##replace-temp-with-query)
-	 - [Introduce Explaining Variable](##introduce-explaining-variable)
-	 - [Split Temporary Variable](##split-temporary-variable)
+	 - [Inline Method](#inline-method)
+	 - [Inline Temp](#inline-temp)
+	 - [Replace Temp with Query](#replace-temp-with-query)
+	 - [Introduce Explaining Variable](#introduce-explaining-variable)
+	 - [Split Temporary Variable](#split-temporary-variable)
 	 - Remove Assignments to Parameters
 	 - Replace Method with Method Object
 	 - Substitute Algorithm
