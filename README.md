@@ -2,12 +2,12 @@
 The below will be my notes on each of the sections in Refactoring Improving the Design of Existing Code
 
  - **Composing Methods**
-	 - Extract Method
-	 - Inline Method
-	 - Inline Temp
-	 - Replace Temp with Query
-	 - Introduce Explaining Variable
-	 - Split Temporary Variable
+	 - [Extract Method](##extract-method)
+	 - [Inline Method](##inline-method)
+	 - [Inline Temp](##inline-temp)
+	 - [Replace Temp with Query](##replace-temp-with-query)
+	 - [Introduce Explaining Variable](##introduce-explaining-variable)
+	 - [Split Temporary Variable](##split-temporary-variable)
 	 - Remove Assignments to Parameters
 	 - Replace Method with Method Object
 	 - Substitute Algorithm
@@ -80,3 +80,51 @@ The below will be my notes on each of the sections in Refactoring Improving the 
 	 - Convert Procedural Design to Objects
 	 - Separate Domain from Presentation
 	 - Extract Hierarchy
+
+---
+
+## Extract Method
+https://refactoring.com/catalog/extractMethod.html
+
+- Helps provide clarity of purpose for the enclosed statements
+- Removes the need for comments when using expressive method names
+- Consider using even over short pieces of code that are semantically dense
+- Consider using if inside the method the statements deal with different [layers of abstraction](http://principles-wiki.net/principles:single_level_of_abstraction)
+- Don't use if the extracted piece of code cannot be given a better name than the current method's
+
+## Inline Method
+https://refactoring.com/catalog/inlineMethod.html
+
+- Helps with needless indirection
+- Consider using as an intermediate step to cleaning up badly factored, smaller methods
+- Don't use if a subclass overrides the method
+
+## Inline Temp
+https://refactoring.com/catalog/inlineTemp.html
+
+- Only use when assigning the value of a method call
+- Consider using as an intermediate step when refactoring to a [Replace Temp with Query](##replace-temp-with-query)
+
+## Replace Temp with Query
+https://refactoring.com/catalog/replaceTempWithQuery.html
+
+- Helps reduce method size by extracting a commonly used query
+- Consider using if a given expression is used only once within the method
+- Consider using if the temp variable is only assigned to once within the method
+
+## Introduce Explaining Variable
+https://refactoring.com/catalog/extractVariable.html
+
+- Helps with expressiveness of conditional statements
+- Consider using if many conditionals are being considered
+- Consider using [Extract Method](##extract-method) for the conditional statement if it is a recurring check instead
+- Often leads to [Replace Temp With Query](##replace-temp-with-query)
+
+
+## Split Temporary Variable
+https://refactoring.com/catalog/splitTemporaryVariable.html
+
+- Consider using if you are re-using a temp variable
+- Helps refactor code to follow [Single Responsibility Principle](http://principles-wiki.net/principles:single_responsibility_principle)
+- Can likely be identified if the name of the variable does not express what it's used for in a meaningful way (temp, foo, etc.)
+- 
