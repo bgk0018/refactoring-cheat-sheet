@@ -2,7 +2,7 @@
 The below will be my notes on each of the sections in Refactoring Improving the Design of Existing Code
 
  - **Composing Methods**
-	 - [Extract Method](##extract-method)
+	 - [Extract Method](#extract-method)
 	 - [Inline Method](##inline-method)
 	 - [Inline Temp](##inline-temp)
 	 - [Replace Temp with Query](##replace-temp-with-query)
