@@ -127,4 +127,3 @@ https://refactoring.com/catalog/splitTemporaryVariable.html
 - Consider using if you are re-using a temp variable
 - Helps refactor code to follow [Single Responsibility Principle](http://principles-wiki.net/principles:single_responsibility_principle)
 - Can likely be identified if the name of the variable does not express what it's used for in a meaningful way (temp, foo, etc.)
-- 
