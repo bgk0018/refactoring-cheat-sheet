@@ -8,81 +8,81 @@ The below will be my notes on each of the sections in Refactoring Improving the 
 	 - [Replace Temp with Query](#replace-temp-with-query)
 	 - [Introduce Explaining Variable](#introduce-explaining-variable)
 	 - [Split Temporary Variable](#split-temporary-variable)
-	 - Remove Assignments to Parameters
-	 - Replace Method with Method Object
-	 - Substitute Algorithm
+	 - [Remove Assignments to Parameters](#remove-assignments-to-parameters)
+	 - [Replace Method with Method Object](#replace-method-with-method-object)
+	 - [Substitute Algorithm](#substitute-algorithm)
  - **Moving Features Between Objects**
-	 - Move Method
-	 - Move Field
-	 - Extract Class
-	 - Inline Class
-	 - Hide Delegate
-	 - Remove Middle Man
-	 - Introduce Foreign Method
-	 - Introduce Local Extension
+	 - [Move Method](#move-method)
+	 - [Move Field](#move-field)
+	 - [Extract Class](#extract-class)
+	 - [Inline Class](#inline-class)
+	 - [Hide Delegate](#hide-delegate)
+	 - [Remove Middle Man](#remove-middle-man)
+	 - [Introduce Foreign Method](#introduce-foreign-method)
+	 - [Introduce Local Extension](#introduce-local-extension)
  - **Organizing Data**
-	 - Self Encapsulate Field
-	 - Replace Data Value with Object
-	 - Change Value to Reference
-	 - Change Reference to Value
-	 - Replace Array with Object
-	 - Duplicate Observed Data
-	 - Change Unidirectional Association to Bidirectional
-	 - Change Bidirectional ASsociation to Unidirectional
-	 - Replace Magic Number with Symbolic Constant
-	 - Encapsulate Field
-	 - Encapsulate Collection
-	 - Replace Record with Data Class
-	 - Replace Type Code with Class
-	 - Replace Type Code with Subclasses
-	 - Replace Type Code with State/Strategy
-	 - Replace Subclass with Fields
+	 - [Self Encapsulate Field](#self-encapsulate-field)
+	 - [Replace Data Value with Object](#replace-data-value-with-object)
+	 - [Change Value to Reference](#change-value-to-reference)
+	 - [Change Reference to Value](#change-reference-to-value)
+	 - [Replace Array with Object](#replace-array-with-object)
+	 - [Duplicate Observed Data](#duplicate-observed-data)
+	 - [Change Unidirectional Association to Bidirectional](#change-unidirectional-association-to-bidirectional)
+	 - [Change Bidirectional Association to Unidirectional](#change-bidirectional-association-to-unidirectional)
+	 - [Replace Magic Number with Symbolic Constant](#replace-magic-number-with-symbolic-constant)
+	 - [Encapsulate Field](#encapsulate-field)
+	 - [Encapsulate Collection](#encapsulate-collection)
+	 - [Replace Record with Data Class](#replace-record-with-data-class)
+	 - [Replace Type Code with Class](#replace-type-code-with-class)
+	 - [Replace Type Code with Subclasses](#replace-type-code-with-subclasses)
+	 - [Replace Type Code with State/Strategy](#replace-type-code-with-state/strategy)
+	 - [Replace Subclass with Fields](#replace-subclass-with-fields)
  - **Simplifying Conditional Expressions**
-	 - Decompose Conditional
-	 - Consolidate Conditional Expression
-	 - Consolidate Duplicate Conditional Fragments
-	 -  Remove Control Flag
-	 - Replace Nested Conditional with Guard Clauses
-	 - Replace Conditional with Polymorphism
-	 - Introduce Null Object
-	 - Introduce Assertion
+	 - [Decompose Conditional](#decompose-conditional)
+	 - [Consolidate Conditional Expression](#consolidate-conditional-expression)
+	 - [Consolidate Duplicate Conditional Fragments](#consolidate-duplicate-conditional-fragments)
+	 - [Remove Control Flag](#remove-control-flag)
+	 - [Replace Nested Conditional with Guard Clauses](#replace-nested-conditional-with-guard-clauses)
+	 - [Replace Conditional with Polymorphism](#replace-conditional-with-polymorphism)
+	 - [Introduce Null Object](#introduce-null-object)
+	 - [Introduce Assertion](#introduce-assertion)
  - **Making Method Calls Simpler**
-	 - Rename Method
-	 - Add Parameter
-	 - Remove Parameter
-	 - Separate Query from Modifier
-	 - Parameterize Method
-	 - Replace Parameter with Explicit Methods
-	 - Preserve Whole Object
-	 - Replace Parameter with Method
-	 - Introduce Parameter Object
-	 - Remove Setting Method
-	 - Hide Method
-	 - Replace Constructor with Factory Method
-	 - Encapsulate Downcast
-	 - Replace Error Code with Exception
-	 - Replace Exception with Test
+	 - [Rename Method](#rename-method)
+	 - [Add Parameter](#add-parameter)
+	 - [Remove Parameter](#remove-parameter)
+	 - [Separate Query from Modifier](#separate-query-from-modifier)
+	 - [Parameterize Method](#parameterize-method)
+	 - [Replace Parameter with Explicit Methods](#replace-parameter-with-explicit-methods)
+	 - [Preserve Whole Object](#preserve-whole-object)
+	 - [Replace Parameter with Method](#replace-parameter-with-method)
+	 - [Introduce Parameter Object](#introduce-parameter-object)
+	 - [Remove Setting Method](#remove-setting-method)
+	 - [Hide Method](#hide-method)
+	 - [Replace Constructor with Factory Method](#replace-constructor-with-factory-method)
+	 - [Encapsulate Downcast](#encapsulate-downcast)
+	 - [Replace Error Code with Exception](#replace-error-code-with-exception)
+	 - [Replace Exception with Test](#replace-exception-with-test)
  - **Dealing with Generalization**
-	 - Pull Up Field
-	 - Pull Up Method
-	 - Pull Up Constructor Body
-	 - Push Down Method
-	 - Push Down Field
-	 - Extract Subclass
-	 - Extract Superclass
-	 - Extract Interface
-	 - Collapse Hierarchy
-	 - Form Template Method
-	 - Replace Inheritance with Delegation
-	 - Replace Delegation with Inheritance
+	 - [Pull Up Field](#pull-up-field)
+	 - [Pull Up Method](#pull-up-method)
+	 - [Pull Up Constructor Body](#pull-up-constructor-body)
+	 - [Push Down Method](#push-down-method)
+	 - [Push Down Field](#push-down-field)
+	 - [Extract Subclass](#extract-subclass)
+	 - [Extract Superclass](#extract-superclass)
+	 - [Extract Interface](#extract-interface)
+	 - [Collapse Hierarchy](#collapse-hierarchy)
+	 - [Form Template Method](#form-template-method)
+	 - [Replace Inheritance with Delegation](#replace-inheritance-with-delegation)
+	 - [Replace Delegation with Inheritance](#replace-delegation-with-inheritance)
  - **Big Refactorings**
-	 - Tease Apart Inheritance
-	 - Convert Procedural Design to Objects
-	 - Separate Domain from Presentation
-	 - Extract Hierarchy
+	 - [Tease Apart Inheritance](#tease-apart-inheritance)
+	 - [Convert Procedural Design to Objects](#conver-procedural-design-to-objects)
+	 - [Separate Domain from Presentation](#separate-domain-from-presentation)
+	 - [Extract Hierarchy](#extract-hierarchy)
 
 ---
-
+# Composing Methods
 ## Extract Method
 https://refactoring.com/catalog/extractMethod.html
 
@@ -127,3 +127,29 @@ https://refactoring.com/catalog/splitTemporaryVariable.html
 - Consider using if you are re-using a temp variable
 - Helps refactor code to follow [Single Responsibility Principle](http://principles-wiki.net/principles:single_responsibility_principle)
 - Can likely be identified if the name of the variable does not express what it's used for in a meaningful way (temp, foo, etc.)
+
+## Remove Assignments to Parameters
+https://refactoring.com/catalog/removeAssignmentsToParameters.html
+
+- Avoid assigning value to parameters, instead use a temp variable
+- Helps avoid clarity issues between pass by reference and pass by value
+- Output parameters are an exception but should be used in very limited circumstances
+
+## Replace Method with Method Object
+https://refactoring.com/catalog/replaceMethodWithMethodObject.html
+
+- Introduces the [Command Pattern](https://sourcemaking.com/design_patterns/command/java/2)
+- Reduces duplication in common work by encapsulating that functionality in an object
+
+## Substitute Algorithm
+https://refactoring.com/catalog/substituteAlgorithm.html
+
+- Given two algorithms, select the one that is either
+  - More performant
+  - More succinct
+  - More expressive
+- Have tests that assert the result of the original algorithm and run them after replacing to insure the new algorithm is a proper substitute
+
+# Moving Features Between Objects
+## Move Method
+https://refactoring.com/catalog/moveMethod.html
